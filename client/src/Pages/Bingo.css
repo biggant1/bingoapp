@@ -1,0 +1,9 @@
+.bingoContainer {
+    width: 75vh;
+    height: 75vh;
+    background-color: var(--front-color);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

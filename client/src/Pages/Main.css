@@ -1,0 +1,23 @@
+.Main {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainButtons > :first-child {
+    margin-bottom: 100%;
+}
+
+.mainButtons > * {
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+* {
+  --back-color: #0B0E11;
+  --front-color: #15171F;
+  --highlight-color: #1F2631;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--back-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Main {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  background-color: var(--front-color);
+  width: clamp(400px, 40%, 600px);
+  height: 80%;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

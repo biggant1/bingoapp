@@ -1,0 +1,39 @@
+.bingoScreen {
+    width: calc(75vh - 6vh);
+    height: calc(75vh - 6vh);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.box {
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: .75px gray solid;
+}
+
+.triangleLeft {
+    width: 0; 
+    height: 0;
+    position: fixed;
+    border-top: calc((75vh - 6vh) / 5) solid rgb(245,83,73); 
+    border-right: calc((75vh - 6vh) / 5) solid transparent;
+}
+
+.triangleRight {
+    width: 0; 
+    height: 0;
+    position: fixed;
+    border-bottom: calc((75vh - 6vh) / 5) solid rgb(71,112,129); 
+    border-left: calc((75vh - 6vh) / 5) solid transparent;
+}
+
+.boxText {
+    z-index: 100;
+    color: #F1F3F8;
+    word-break: break-word;
+    text-align: center;
+}

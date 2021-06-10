@@ -1,0 +1,13 @@
+{
+  "name": "bingowin",
+  "version": "1.0.0",
+  "description": "Bingo WIn",
+  "main": "server.js",
+  "author": "biggant2",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}
