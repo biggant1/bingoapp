@@ -2,6 +2,7 @@ const express = require('express')
 const app = express();
 const util = require('./util')
 const cors = require('cors')
+const path = require('path')
 const server = require('http').createServer(app);
 const io = require('socket.io')(server, {
     cors: {
@@ -12,6 +13,7 @@ const io = require('socket.io')(server, {
 const port = process.env.PORT || 4005
 app.use(cors())
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '../client/build')))
 
 let rooms = {}
 
@@ -48,8 +50,8 @@ app.get('/api/rooms', (req, res) => {
     res.send(rooms)
 })
 
-app.get('/', (req, res) => {
-    res.send('LLLLLLLLL')
+app.get('*', (req, res) => {
+    res.redirect('/')
 })
 
 server.listen(port, () => console.log(`Running on http://localhost:${port}/`));
